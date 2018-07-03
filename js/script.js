@@ -1,3 +1,4 @@
 function login() {
-				alert("login complete!");
+	var money=10; 
+	alert(money);
 }
