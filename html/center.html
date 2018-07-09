@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="refresh" content="10">
+		<meta http-equiv="refresh" content="300">
 		<script src="../js/script.js" type="text/javascript"/></script>
 		<noscript>Javascript enable failed!</noscript>
 	</head>
@@ -19,20 +19,23 @@
 			<hr>
 		</div>
 		<div align="center">
-			<table border=0>
-				<tr>
-					<td>User Name:</td>
-					<td><input type="text" name="user_name"/></td>
-				</tr>
-				<tr>
-					<td>Password   :</td>
-					<td><input type="password" name="pass"/></tb>
-				</tr>
-				<tr colspan="3">
-					<td><input type="reset" name="reset_val" value="Reset"/></td>
-					<td><input type="button" onclick="login();" name="login" value="Log In"/></td>
-				</tr>				
-			</table>
+			<form name="loginForm" onsubmit="return(login());">
+				<table border=0>
+					<tr>
+						<td>User Name:</td>
+						<td colspan="2"><input type="text" name="user_name"/></td>
+					</tr>
+					<tr>
+						<td>Password   :</td>
+						<td colspan="2"><input type="password" name="pass"/></tb>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="reset" name="reset_val" value="Reset"/></td>
+						<td align="right"><input type="submit" name="login_button" value="Login"/></td>
+					</tr>				
+				</table>
+			</form>
 		</div>
 	</body>
 </html>
